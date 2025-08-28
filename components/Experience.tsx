@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
+  useEffect(() => {
+    // This code runs only in the browser
+    document.getElementById("something");
+  }, []);
+
   return (
     <div className="py-20 w-full">
       <h1 className="heading">
